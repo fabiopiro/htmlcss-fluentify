@@ -67,16 +67,17 @@ body {
     background-color: #7cbb02;
     border: 1px solid #7cbb02;
 }
+
+p {
+    color: gray;
+}
 /* debug */
 /* header debug */
 
 /* main debug*/
 
 /* footer debug*/
-footer {
-    height: 100px;
-    background-color: grey;
-}
+
 /* header */
 header {
     background-color: #0c325a;
@@ -127,11 +128,17 @@ h1 {
 /* /HEADER */
 /* sezione uno */
 .section-one {
-    height: 150px;
     background-color: lightgray;
 }
 .section-one-content {
     text-align: center;
+    padding: 40px 0;
+}
+.section-one-content h2 {
+    margin-bottom: 20px;
+}
+.section-one-content p {
+    font-weight: bold;
 }
 
 
@@ -140,7 +147,7 @@ h1 {
     height: 100%;
     width: 32%;
     text-align: center;
-    padding: 30px 0;
+    padding: 40px 0;
 }
 .center {
     margin: 0 2%;
@@ -161,23 +168,56 @@ h1 {
 }
 .element p {
     font-size: 20px;
-    color: gray;
 }
-.bar {
+.element .bar {
     height: 1px;
     width: 20%;
     margin: 5% auto;
-    background-color: black;
+    background-color: gray;
 }
 
 
-
-
-
-
-
+.bar {
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+    margin-bottom: 30px;
+}
 
 .section-three {
-    height: 500px;
-    background-color: green;
 }
+
+.layout-two {
+    width: 70%;
+    margin: 0 auto;
+
+}
+.parte {
+    height: 400px;
+    width: 45%;
+    margin-bottom: 40px;
+
+}
+.sinistra {
+    margin-right: 10%;
+}
+
+.parte img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.parte h2 {
+    font-size: 40px;
+}
+
+.parte p {
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+
+footer {
+    height: 200px;
+    background-color: lightgray;
+}
+
