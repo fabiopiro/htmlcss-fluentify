@@ -241,3 +241,9 @@ footer {
     text-transform: none;
     color: gray;
 }
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 85%;
+}
