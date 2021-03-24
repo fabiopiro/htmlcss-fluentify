@@ -19,20 +19,57 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+.float-left {
+    float: left;
+}
 
+.list-inline {
+    list-style: none;
+}
+.list-inline li {
+    display: inline-block;
+    padding: 0 12px;
+}
+.list-inline a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* IMPO line-height IMPO */
+    line-height: 20px;
+    /* OCCHIO! RIMUOVI ANCHE QUI TEXT DEC. */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    
+}
+ /* CORREGGO PADDING EREDITATO DA .btn */
+.btn-largex {
+    padding: 5px 40px;
+}
+.btn-largey {
+    padding: 15px 15px;
+}
+/* VARIANTI BOTTONI */
+.btn-blue {
+    background-color: #0c325a;
+    border: 1px solid white;
+    /* CORREGGO PADDING EREDITATO DA .btn */
+}
+.btn-green {
+    background-color: #7cbb02;
+    border: 1px solid #7cbb02;
+}
 /* debug */
 /* header debug */
-header {
-    background-color: coral;
-}
-.menu {
-    height: 100px;
-    background-color: grey;
-}
-.jumbotron {
-    height: 500px;
-    background-color: blue;
-}
+
 /* main debug*/
 .section-one {
     height: 100px;
@@ -51,3 +88,51 @@ footer {
     height: 100px;
     background-color: grey;
 }
+/* header */
+header {
+    background-color: #0c325a;
+    /* background imge */
+    background-image: url(../img/background-header.png);
+    background-size: 75% auto;
+    background-repeat: no-repeat;
+    background-position-x: 120%;
+    background-position-y: 115%;
+}
+/* menu */
+.header-nav {
+    height: 100px;
+    line-height: 100px;
+}
+.header-logo {
+    height: 100%;
+    width: 15%;
+}
+.nav-one {
+    height: 100%;
+    width: 45%;
+    text-align: left;
+}
+.nav-two {
+    height: 100%;
+    width: 40%;
+    text-align: right;
+}
+
+.jumbotron {
+    height: 500px;
+    position: relative;
+}
+.jumbotron-content {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+
+}
+h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 30px;
+}
+
