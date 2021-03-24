@@ -11,3 +11,43 @@
     display: table;
     clear: both;
 }
+/* font */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.layout {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* debug */
+/* header debug */
+header {
+    background-color: coral;
+}
+.menu {
+    height: 100px;
+    background-color: grey;
+}
+.jumbotron {
+    height: 500px;
+    background-color: blue;
+}
+/* main debug*/
+.section-one {
+    height: 100px;
+    background-color: grey;
+}
+.section-two {
+    height: 500px;
+    background-color: red;
+}
+.section-three {
+    height: 500px;
+    background-color: green;
+}
+/* footer debug*/
+footer {
+    height: 100px;
+    background-color: grey;
+}
