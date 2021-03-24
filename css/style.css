@@ -71,18 +71,7 @@ body {
 /* header debug */
 
 /* main debug*/
-.section-one {
-    height: 100px;
-    background-color: grey;
-}
-.section-two {
-    height: 500px;
-    background-color: red;
-}
-.section-three {
-    height: 500px;
-    background-color: green;
-}
+
 /* footer debug*/
 footer {
     height: 100px;
@@ -135,4 +124,50 @@ h1 {
     color: white;
     margin-bottom: 30px;
 }
+/* /HEADER */
+/* sezione uno */
+.section-one {
+    height: 150px;
+    background-color: lightgray;
+}
+.section-one-content {
+    text-align: center;
+}
 
+
+/* section due */
+.section-two {
+    height: 500px;
+    background-color: red;
+}
+.element {
+    height: 100%;
+    width: 32%;
+    background-color: lightgreen;
+    text-align: center;
+}
+.center {
+    margin: 0 2%;
+}
+
+.element img {
+    width: 30%;
+}
+.bar {
+    height: 1px;
+    width: 20%;
+    margin: auto;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+.section-three {
+    height: 500px;
+    background-color: green;
+}
