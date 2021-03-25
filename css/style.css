@@ -32,8 +32,11 @@ p {
     font-size: 20px;
     color: gray;
 }
-
-/* layout */
+/* immagini */
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 /* layout 80% */
 .layout-one {
     width: 80%;
@@ -43,9 +46,7 @@ p {
 .layout-two {
     width: 70%;
     margin: 0 auto;
-
 }
-
 /* lista inline */
 .list-inline {
     list-style: none;
@@ -60,12 +61,11 @@ p {
     font-size: 12px;
     color: white;
 }
-
+/* bottoni */
 .btn {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 5px;
-    /* IMPO line-height IMPO */
     line-height: 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -87,7 +87,6 @@ p {
     background-color: #7cbb02;
     border: 1px solid #7cbb02;
 }
-
 /* HEADER */
 header {
     background-color: #0c325a;
@@ -129,7 +128,6 @@ header {
     margin-bottom: 30px;
 }
 /* /HEADER */
-
 /* sezione uno */
 .section-one {
     text-align: center;
@@ -140,8 +138,7 @@ header {
 .section-one h3 {
     margin-bottom: 15px;
 }
-
-/* section due */
+/* sezione due */
 .element-one {
     height: 100%;
     width: 32%;
@@ -155,10 +152,7 @@ header {
     height: 150px;
     width: 100%;
 }
-.image img {
-    max-width: 100%;
-    max-height: 100%;
-}
+
 .element-one h3 {
     margin: 5% 0;
     color: #7cbb02;
@@ -171,14 +165,12 @@ header {
     margin: 5% auto;
     background-color: gray;
 }
-
 .bar {
     height: 1px;
     width: 98%;
     margin: 40px auto;
     background-color: lightgray;
 }
-
 /* section 3 */
 .element-two {
     height: 400px;
@@ -188,34 +180,26 @@ header {
     margin-right: 10%;
 }
 
-.element-two img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
 .element-two p {
     margin: 20px 0;
 }
 
-/* footer */
+/* FOOTER */
 footer {
     height: 200px;
     margin-top: 40px;
     background-color: lightgray;
 }
-
 .footer-container {
     height: 200px;
     line-height: 200px;
 }
 .footer-title {
     width: 50%;
-    vertical-align: middle;
 }
 .footer-nav {
     width: 50%;
     text-align: right;
-    vertical-align: middle;
 }
 
 .footer-nav a:not(.btn) {
