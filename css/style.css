@@ -11,18 +11,42 @@
     display: table;
     clear: both;
 }
+.float-left {
+    float: left;
+}
 /* font */
 body {
     font-family: 'Roboto', sans-serif;
 }
-.layout {
+h1 {
+    font-size: 50px;
+    color: white;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 30px;
+}
+p {
+    font-size: 20px;
+    color: gray;
+}
+
+/* layout */
+/* layout 80% */
+.layout-one {
     width: 80%;
     margin: 0 auto;
 }
-.float-left {
-    float: left;
+/* layout 70% */
+.layout-two {
+    width: 70%;
+    margin: 0 auto;
+
 }
 
+/* lista inline */
 .list-inline {
     list-style: none;
 }
@@ -30,7 +54,7 @@ body {
     display: inline-block;
     padding: 0 12px;
 }
-.list-inline a {
+.list-inline a:not(.btn) {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
@@ -43,42 +67,28 @@ body {
     border-radius: 5px;
     /* IMPO line-height IMPO */
     line-height: 20px;
-    /* OCCHIO! RIMUOVI ANCHE QUI TEXT DEC. */
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
     color: white;
-    
 }
- /* CORREGGO PADDING EREDITATO DA .btn */
 .btn-largex {
-    padding: 5px 40px;
+    padding: 5px 30px;
 }
 .btn-largey {
-    padding: 15px 15px;
+    padding: 17px 13px;
+    font-size: 15px;
 }
-/* VARIANTI BOTTONI */
 .btn-blue {
     background-color: #0c325a;
     border: 1px solid white;
-    /* CORREGGO PADDING EREDITATO DA .btn */
 }
 .btn-green {
     background-color: #7cbb02;
     border: 1px solid #7cbb02;
 }
 
-p {
-    color: gray;
-}
-/* debug */
-/* header debug */
-
-/* main debug*/
-
-/* footer debug*/
-
-/* header */
+/* HEADER */
 header {
     background-color: #0c325a;
     /* background imge */
@@ -94,60 +104,48 @@ header {
     line-height: 100px;
 }
 .header-logo {
-    height: 100%;
     width: 15%;
 }
 .nav-one {
-    height: 100%;
     width: 45%;
-    text-align: left;
 }
 .nav-two {
-    height: 100%;
     width: 40%;
     text-align: right;
 }
-
-.jumbotron {
+/* jumbotron */
+.jumbotron-container {
     height: 500px;
     position: relative;
 }
-.jumbotron-content {
+.jumbotron {
     width: 50%;
     position: absolute;
     top: 50%;
     left: 0;
     transform: translate(0, -50%);
-
 }
-h1 {
-    font-size: 50px;
-    color: white;
+.jumbotron h1 {
     margin-bottom: 30px;
 }
 /* /HEADER */
+
 /* sezione uno */
 .section-one {
-    background-color: lightgray;
-}
-.section-one-content {
     text-align: center;
     padding: 40px 0;
+    margin-bottom: 40px;
+    background-color: lightgray;
 }
-.section-one-content h2 {
-    margin-bottom: 20px;
+.section-one h3 {
+    margin-bottom: 15px;
 }
-.section-one-content p {
-    font-weight: bold;
-}
-
 
 /* section due */
-.element {
+.element-one {
     height: 100%;
     width: 32%;
     text-align: center;
-    padding: 40px 0;
 }
 .center {
     margin: 0 2%;
@@ -161,68 +159,52 @@ h1 {
     max-width: 100%;
     max-height: 100%;
 }
-.element h3 {
+.element-one h3 {
     margin: 5% 0;
-    font-size: 30px;
     color: #7cbb02;
 }
-.element p {
-    font-size: 20px;
-}
-.element .bar {
+
+/* barra separatrice */
+.element-one .bar {
     height: 1px;
     width: 20%;
     margin: 5% auto;
     background-color: gray;
 }
 
-
 .bar {
     height: 1px;
-    width: 100%;
-    background-color: gray;
-    margin-bottom: 30px;
-}
-
-.section-three {
-}
-
-.layout-two {
-    width: 70%;
-    margin: 0 auto;
-
-}
-.parte {
-    height: 400px;
-    width: 45%;
-    margin-bottom: 40px;
-
-}
-.sinistra {
-    margin-right: 10%;
-}
-
-.parte img {
-    max-width: 100%;
-    max-height: 100%;
-}
-.parte h2,
-footer h2 {
-    font-size: 40px;
-}
-
-.parte p {
-    font-size: 20px;
-    margin: 30px 0;
-}
-
-
-footer {
-    height: 200px;
+    width: 98%;
+    margin: 40px auto;
     background-color: lightgray;
 }
 
-.footer-nav {
+/* section 3 */
+.element-two {
+    height: 400px;
+    width: 45%;
+}
+.sx {
+    margin-right: 10%;
+}
+
+.element-two img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.element-two p {
+    margin: 20px 0;
+}
+
+/* footer */
+footer {
+    height: 200px;
+    margin-top: 40px;
+    background-color: lightgray;
+}
+
+.footer-container {
     height: 200px;
     line-height: 200px;
 }
@@ -230,20 +212,29 @@ footer {
     width: 50%;
     vertical-align: middle;
 }
-.footer-nav-right {
+.footer-nav {
     width: 50%;
     text-align: right;
     vertical-align: middle;
 }
 
 .footer-nav a:not(.btn) {
-    font-size: 20px;
+    font-size: 18px;
     text-transform: none;
     color: gray;
 }
 
+/* pseudo-select */
+.pseudo-select {
+    border-bottom: 2px solid;
+}
+.pseudo-select::after {
+    content: "\2007\2007\2007\2007\2007
+    \2007\2007\2007\2007\2007\25BC";
+}
+/* fixed help*/
 .fixed {
     position: fixed;
     bottom: 0;
-    left: 85%;
+    left: 80%;
 }
